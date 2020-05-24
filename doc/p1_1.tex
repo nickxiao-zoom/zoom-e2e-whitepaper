@@ -162,7 +162,7 @@ To verify a signature:
 \item Return $\true$ if $r_1 = \true$ and $r_2 = \true$. Otherwise return $\false$.
 \end{enumerate*}
 
-\paragraph{Authenticated Public-Key Encryption.} Our algorithms employ an IND-CCA-secure authenticated public-key encryption scheme ${\sf \cbox}$, similar to NaCL~\cite{nacl}'s \texttt{crypto\_box} construction. A key difference is our algorithm should be FIPS-compliant, using NIST P-384 for Diffie-Hellman, AES-GCM for a symmetric cipher, and HDKF for key derivation. We additionally include a Diffie-Hellman key share over Curve25519.\\
+\paragraph{Authenticated Public-Key Encryption.} Our algorithms employ an IND-CCA-secure authenticated public-key encryption scheme ${\sf \cbox}$, similar to NaCL~\cite{nacl}'s \texttt{crypto\_box} construction. A key difference is our algorithm should be FIPS-compliant, using NIST P-384 for Diffie-Hellman, AES-GCM for a symmetric cipher, and HKDF for key derivation. We additionally include a Diffie-Hellman key share over Curve25519.\\
 
 %%%%%%%%%%%%%%%%%%%%%
 % CRYPTO_BOX KEYGEN
